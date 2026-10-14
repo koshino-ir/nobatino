@@ -78,10 +78,10 @@ npx expo start
 ## 📸 اسکرین‌شات‌ها
 
 <div align="center">
-  <img src="docs/screenshots/services.png" width="200" />
-  <img src="docs/screenshots/booking.png" width="200" />
-  <img src="docs/screenshots/appointments.png" width="200" />
-  <img src="docs/screenshots/profile.png" width="200" />
+  <img src="assets/screenshots/services.png" width="200" />
+  <img src="assets/screenshots/booking.png" width="200" />
+  <img src="assets/screenshots/appointments.png" width="200" />
+  <img src="assets/screenshots/profile.png" width="200" />
 </div>
 
 ## 🧪 تست و کیفیت
