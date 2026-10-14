@@ -1,0 +1,78 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dx="0" dy="8" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- پس‌زمینه -->
+  <rect width="1024" height="1024" rx="220" fill="url(#bgGradient)"/>
+  
+  <!-- دایره‌های تزئینی -->
+  <circle cx="850" cy="180" r="220" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="150" cy="880" r="180" fill="#FFFFFF" opacity="0.05"/>
+
+  <!-- کارت تقویم -->
+  <g filter="url(#shadow)">
+    <!-- بدنه‌ی تقویم -->
+    <rect x="252" y="292" width="520" height="480" rx="56" fill="#FFFFFF"/>
+    
+    <!-- نوار بالای تقویم -->
+    <path d="M 252 348 Q 252 292 308 292 L 716 292 Q 772 292 772 348 L 772 412 L 252 412 Z" fill="#EEF2FF"/>
+    
+    <!-- خط جداکننده -->
+    <line x1="252" y1="412" x2="772" y2="412" stroke="#E0E7FF" stroke-width="3"/>
+    
+    <!-- حلقه‌های بالای تقویم -->
+    <rect x="368" y="252" width="40" height="88" rx="20" fill="#4F46E5"/>
+    <rect x="616" y="252" width="40" height="88" rx="20" fill="#4F46E5"/>
+    
+    <!-- نقطه‌های تاریخ (ردیف اول) -->
+    <circle cx="342" cy="472" r="14" fill="#E0E7FF"/>
+    <circle cx="432" cy="472" r="14" fill="#E0E7FF"/>
+    <circle cx="522" cy="472" r="14" fill="#E0E7FF"/>
+    <circle cx="612" cy="472" r="14" fill="#E0E7FF"/>
+    <circle cx="702" cy="472" r="14" fill="#E0E7FF"/>
+    
+    <!-- ردیف دوم -->
+    <circle cx="342" cy="562" r="14" fill="#E0E7FF"/>
+    <circle cx="432" cy="562" r="14" fill="#E0E7FF"/>
+    <circle cx="612" cy="562" r="14" fill="#E0E7FF"/>
+    <circle cx="702" cy="562" r="14" fill="#E0E7FF"/>
+    
+    <!-- ردیف سوم -->
+    <circle cx="342" cy="652" r="14" fill="#E0E7FF"/>
+    <circle cx="432" cy="652" r="14" fill="#E0E7FF"/>
+    <circle cx="522" cy="652" r="14" fill="#E0E7FF"/>
+    <circle cx="612" cy="652" r="14" fill="#E0E7FF"/>
+    <circle cx="702" cy="652" r="14" fill="#E0E7FF"/>
+  </g>
+
+  <!-- تیک بزرگ (علامت تایید) -->
+  <g filter="url(#shadow)">
+    <circle cx="672" cy="672" r="132" fill="url(#accentGradient)"/>
+    <circle cx="672" cy="672" r="132" fill="none" stroke="#FFFFFF" stroke-width="10" opacity="0.9"/>
+    <path d="M 612 672 L 656 716 L 736 626" 
+          stroke="#FFFFFF" 
+          stroke-width="28" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none"/>
+  </g>
+</svg>

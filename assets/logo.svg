@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="checkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- کارت تقویم -->
+  <rect x="106" y="126" width="300" height="280" rx="32" fill="#FFFFFF"/>
+  <path d="M 106 158 Q 106 126 138 126 L 374 126 Q 406 126 406 158 L 406 200 L 106 200 Z" fill="url(#logoBg)"/>
+  
+  <!-- حلقه‌ها -->
+  <rect x="170" y="106" width="24" height="56" rx="12" fill="#4F46E5"/>
+  <rect x="318" y="106" width="24" height="56" rx="12" fill="#4F46E5"/>
+  
+  <!-- نقطه‌های تقویم -->
+  <circle cx="160" cy="252" r="10" fill="#E0E7FF"/>
+  <circle cx="220" cy="252" r="10" fill="#E0E7FF"/>
+  <circle cx="280" cy="252" r="10" fill="#E0E7FF"/>
+  <circle cx="340" cy="252" r="10" fill="#E0E7FF"/>
+  
+  <circle cx="160" cy="312" r="10" fill="#E0E7FF"/>
+  <circle cx="220" cy="312" r="10" fill="#E0E7FF"/>
+  <circle cx="340" cy="312" r="10" fill="#E0E7FF"/>
+
+  <!-- تیک -->
+  <circle cx="340" cy="360" r="72" fill="url(#checkGradient)"/>
+  <circle cx="340" cy="360" r="72" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.9"/>
+  <path d="M 308 360 L 332 384 L 376 336" 
+        stroke="#FFFFFF" 
+        stroke-width="16" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+</svg>
